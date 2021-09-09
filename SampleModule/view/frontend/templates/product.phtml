@@ -1,0 +1,13 @@
+<?php
+/** @var \Cms\SampleModule\Block\Prod $block */
+?>
+<?php
+
+$productCollection = $block->getProducts();
+foreach ($productCollection as $product): ?>
+
+<p><?php echo $product->getData('name') . ' : '; echo $product->getData('sku')?> </p>
+
+<?php endforeach;?>
+
+
